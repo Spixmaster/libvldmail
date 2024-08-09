@@ -74,7 +74,7 @@ This should be enough.
 
 ### Donate money to the nature:
 
-Both [Kākāpō Recovery](http://kakaporecovery.org.nz/) and the [WWF](https://support.wwf.org.uk/adopt-a-panda) do a pretty good job at trying to keep species alive. You are invited to join their efforts.
+Both [Kākāpō Recovery](https://www.doc.govt.nz/our-work/kakapo-recovery/) and the [WWF](https://support.wwf.org.uk/adopt-a-panda) do a pretty good job at trying to keep species alive. You are invited to join their efforts.
 
 ### Donate money to me:
 
