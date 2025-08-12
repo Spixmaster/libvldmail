@@ -45,6 +45,10 @@ You should be able to use `libvldmail` from inside Ruby, Python. Lisp etc. with 
         /* ... more of your code ... */
     }
 
+## Get the sources
+
+Since August 2025, the canonical upstream repository is [on Fossil.](https://code.rosaelefanten.org/libvldmail) I provide Git mirrors on [Codeberg](https://codeberg.org/dertuxmalwieder/libvldmail/) and [Github](https://github.com/dertuxmalwieder/libvldmail) for the time being. They are synchronized every night.
+
 ## Building
 
 Use [CMake](https://cmake.org/) to create the `libvldmail` library, then link it into your application. And don't forget to point to the `vldmail.h` header.
@@ -84,7 +88,7 @@ Yes, I like money as well.
 
 ## Help me, please?
 
-I accept pull requests if they are related to adding RFC-compatibility. This library seems to be working as intended, but - just like every other software - there might be quirks which I have not come across yet. You are invited to list yourself as a contributor below this paragraph if you need your merits:
+I accept pull requests (on Codeberg) or - even better - [Fossil patches](https://fossil-scm.org/home/doc/trunk/www/patchcmd.md) if they are related to adding RFC-compatibility. This library seems to be working as intended, but - just like every other software - there might be quirks which I have not come across yet. You are invited to list yourself as a contributor below this paragraph if you need your merits:
 
 ### Contributors
 
