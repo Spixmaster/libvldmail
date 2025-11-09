@@ -59,6 +59,12 @@ By default, CMake does not build `test.c` which tries to test the library's basi
 
     cmake . -DBUILD_THE_TEST=1
 
+## Pre-built packages
+
+### Gentoo
+
+A current version of `libvldmail` can be obtained from the [rosa-ebuilds](https://overlays.gentoo.org) overlay.
+
 ## Versioning
 
 `libvldmail` tries to follow the [Semantic Versioning](https://semver.org/) scheme. You can ask for the current version via the API:
