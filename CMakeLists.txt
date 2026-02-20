@@ -37,6 +37,8 @@ endif()
 
 if(NOT ${LIBVLDMAIL_TESTS})
     add_library("${TARGET_NAME}" "${SRCS}")
+
+    set_target_properties("${TARGET_NAME}" PROPERTIES PUBLIC_HEADER "${CMAKE_CURRENT_SOURCE_DIR}/src/vldmail.h")
 else()
     enable_testing()
     include("CTest")
