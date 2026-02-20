@@ -56,6 +56,7 @@ target_include_directories(${TARGET_NAME} AFTER PUBLIC $<BUILD_INTERFACE:${CMAKE
 if(NOT ${LIBVLDMAIL_TESTS})
     install(
         TARGETS "${TARGET_NAME}"
+        EXPORT "${PROJECT_NAME}-export"
         ARCHIVE
             CONFIGURATIONS "Release"
             DESTINATION "${CMAKE_INSTALL_LIBDIR}/"
@@ -78,11 +79,6 @@ if(NOT ${LIBVLDMAIL_TESTS})
                 GROUP_EXECUTE
                 WORLD_READ
                 WORLD_EXECUTE
-                CXX_MODULES_BMI
-            CONFIGURATIONS "Release"
-            DESTINATION "${CMAKE_INSTALL_INCLUDEDIR}/"
-            PERMISSIONS OWNER_READ OWNER_WRITE GROUP_READ WORLD_READ
-            EXPORT "${PROJECT_NAME}-export"
         FRAMEWORK
             CONFIGURATIONS "Release"
             DESTINATION "${CMAKE_INSTALL_LIBDIR}/"
@@ -137,7 +133,9 @@ if(NOT ${LIBVLDMAIL_TESTS})
                 GROUP_READ
                 GROUP_EXECUTE
                 WORLD_READ
-                WORLD_EXECUTE)
+                WORLD_EXECUTE
+        INCLUDES
+        DESTINATION "${CMAKE_INSTALL_INCLUDEDIR}/")
 
     install(
         EXPORT "${PROJECT_NAME}-export"
