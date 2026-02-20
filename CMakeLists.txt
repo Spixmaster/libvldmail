@@ -24,9 +24,9 @@ option(LIBVLDMAIL_TESTS "Build the tests." OFF)
 
 # Target
 if(NOT ${LIBVLDMAIL_TESTS})
-    set(TARGET_NAME "${PROJECT_NAME}")
+    set(TARGET_NAME "vldmail")
 else()
-    set(TARGET_NAME "${PROJECT_NAME}-tests")
+    set(TARGET_NAME "vldmailtest")
 endif()
 
 set(SRCS "${CMAKE_CURRENT_SOURCE_DIR}/src/vldmail.c")
