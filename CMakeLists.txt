@@ -15,12 +15,6 @@ set(CMAKE_C_EXTENSIONS OFF)
 set(CMAKE_C_STANDARD 99)
 set(CMAKE_C_STANDARD_REQUIRED ON)
 
-if(NOT ${LIBVLDMAIL_TESTS})
-    set(TARGET_NAME "${PROJECT_NAME}")
-else()
-    set(TARGET_NAME "${PROJECT_NAME}-tests")
-endif()
-
 # Modules
 include("CMakePackageConfigHelpers")
 include("GNUInstallDirs")
@@ -29,6 +23,12 @@ include("GNUInstallDirs")
 option(LIBVLDMAIL_TESTS "Build the tests." OFF)
 
 # Target
+if(NOT ${LIBVLDMAIL_TESTS})
+    set(TARGET_NAME "${PROJECT_NAME}")
+else()
+    set(TARGET_NAME "${PROJECT_NAME}-tests")
+endif()
+
 set(SRCS "${CMAKE_CURRENT_SOURCE_DIR}/src/vldmail.c")
 
 if(${LIBVLDMAIL_TESTS})
